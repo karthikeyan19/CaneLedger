@@ -1,0 +1,13 @@
+[
+  {"cname": "Balaji",
+    "cid": 100,
+    "price": 23
+  },
+  {"cname": "Boys",
+    "cid": 101,
+    "price": 25
+  },{"cname": "paper",
+  "cid": 102,
+  "price": 23
+  }
+]

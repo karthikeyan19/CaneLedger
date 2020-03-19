@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          package="com.karthikeyan.myapplication">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+            android:name=".CaneLedgerApp"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".IncomeExpanseActivity"
+                android:label="@string/title_activity_income_expanse"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".activity.DaySaleInfoActivity"
+                android:label="@string/title_activity_day_sale_info"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".DashboardActivity"
+                android:label="@string/title_activity_dashboard"
+                android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+                android:name=".activity.CustListActivity"
+                android:exported="true"
+                android:label="@string/title_activity_cust_list"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ScrollingActivity"
+                android:label="@string/title_activity_scrolling"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".activity.CustomerSalesViewActivity"
+                android:label="@string/title_activity_cust_list"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity
+                android:name=".activity.Main2Activity"
+                android:label="@string/title_activity_main2"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

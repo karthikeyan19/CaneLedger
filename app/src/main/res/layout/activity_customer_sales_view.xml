@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".activity.CustomerSalesViewActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="1"
+        >
+            <LinearLayout
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:layout_weight="0.8"
+                    android:orientation="vertical"
+            >
+            <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.8"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"/>
+                <TextView android:id="@+id/balanceCusTV" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:id="@+id/showButton"
+                    tools:text="Jan -20"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_white_48dp"
+                    android:ellipsize="none"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <RadioGroup android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showSelectionRG"
+                    android:visibility="gone"
+
+
+        >
+
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="This Month"
+                         android:id="@+id/curMonthRB"
+                         style="@style/TextViewHeadings"
+
+            />
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Previous Month"
+                         android:textStyle="bold"
+                         android:layout_weight="0.5"
+                         android:id="@+id/prevMonthRB"
+                         style="@style/TextViewHeadings"
+
+            />
+
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="All Date"
+                         android:textStyle="bold"
+                         android:layout_weight="0.5"
+                         android:id="@+id/allDateRB"
+                         style="@style/TextViewHeadings"
+
+            />
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Custom Date"
+                         android:textStyle="bold"
+                         android:id="@+id/cusDateRB"
+                         android:layout_weight="0.5"
+                         style="@style/TextViewHeadings"
+
+            />
+
+        </RadioGroup>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+
+              android:layout_weight="4"
+            >
+                <TextView android:layout_width="wrap_content"
+                          android:text="Date"
+                          android:layout_weight="1"
+                          style="@style/TextViewHeadings"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="Load"
+                          android:layout_weight="1"
+                          style="@style/TextViewHeadings"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="Empty"
+                          android:layout_weight="1"
+                          style="@style/TextViewHeadings"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="Amount"
+                          android:layout_weight="1"
+                          style="@style/TextViewHeadings"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_customer_sales_view"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

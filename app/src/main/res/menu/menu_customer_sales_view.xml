@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.karthikeyan.myapplication.activity.CustomerSalesViewActivity">
+
+    <item android:id="@+id/action_download"
+          android:title="@string/action_download"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_baseline_archive_white_48dp"
+          app:showAsAction="always"/>
+
+
+</menu>

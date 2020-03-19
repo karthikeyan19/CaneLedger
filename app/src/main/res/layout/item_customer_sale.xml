@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:layout_marginBottom="8dp"
+android:layout_weight="4"
+>
+<TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/slDateOfEntryTV"
+          android:layout_weight="1"
+
+/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/slNoOfLoadTV"
+              android:layout_weight="1"
+
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/slNoOfEmptyTV"
+              android:layout_weight="1"
+
+    />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:id="@+id/slCollectedAmtTV"
+              android:layout_weight="1"
+              android:textAlignment="center"
+    />
+</LinearLayout>

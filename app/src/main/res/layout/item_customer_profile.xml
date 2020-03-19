@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:padding="8dp"
+>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+    >
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/customerNameTV"
+                      tools:text="Balaji"
+                      android:textSize="18sp"
+                      android:paddingStart="8dp"
+                      android:paddingTop="8dp"
+
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                      android:id="@+id/balanceTV"
+                      android:paddingRight="8dp"
+                      android:paddingStart="8dp"
+                      tools:text="$230"
+                      android:textSize="16sp"
+                      android:textStyle="bold"
+                      android:layout_below="@id/balanceTextTV"
+                      android:layout_toRightOf="@id/customerNameTV"
+
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:paddingTop="10dp"
+                      android:paddingStart="8dp"
+                      android:id="@+id/balanceTextTV"
+                      android:text="@string/balance"
+                      android:textSize="10sp"
+
+                      android:layout_toRightOf="@id/customerNameTV"
+
+            />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:paddingStart="8dp"
+                      android:paddingTop="10dp"
+                      android:id="@+id/emptyTextTV"
+
+                      android:text="Empty: "
+                      android:textSize="10sp"
+                      android:layout_toRightOf="@id/balanceTextTV"
+
+
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/emptyTV"
+
+                      android:layout_below="@id/emptyTextTV"
+                      android:layout_toRightOf="@id/balanceTV"
+                      android:paddingStart="16dp"
+                      tools:text="10"
+                      android:textSize="16sp"
+                      android:textStyle="bold"
+            />
+
+            <Button
+                    android:layout_height="wrap_content"
+
+                    android:layout_width="wrap_content"
+                    android:id="@+id/editBTN"
+                    android:layout_margin="0dp"
+                    android:drawableLeft="@drawable/ic_baseline_create_black_36dp"
+                    android:text="Entry"
+                    android:textAllCaps="false"
+                    style="?android:attr/borderlessButtonStyle"
+
+                    android:layout_toStartOf="@id/viewBTN"
+
+
+                />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/viewBTN"
+                    android:drawableLeft="@drawable/ic_baseline_trending_up_black_36dp"
+                    android:text="Sales"
+                    android:textAllCaps="false"
+                    style="?android:attr/borderlessButtonStyle"
+
+
+
+            />
+
+
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+    </LinearLayout>
+<View android:layout_width="match_parent"
+      android:layout_marginLeft="4dp"
+      android:layout_marginRight="4dp"
+
+      android:background="@color/divider_dimlight_gray" android:layout_height="1dp" android:layout_gravity="bottom"></View>
+
+</android.support.v7.widget.CardView>
