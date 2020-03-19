@@ -17,12 +17,7 @@
                 android:name=".IncomeExpanseActivity"
                 android:label="@string/title_activity_income_expanse"
                 android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <action android:name="android.intent.action.VIEW"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity
                 android:name=".activity.DaySaleInfoActivity"
@@ -40,6 +35,12 @@
                 android:exported="true"
                 android:label="@string/title_activity_cust_list"
                 android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity
                 android:name=".ScrollingActivity"
